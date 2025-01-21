@@ -1,5 +1,6 @@
 group 'io.github.edufolly.flutterbluetoothserial'
 version '1.0-SNAPSHOT'
+
 buildscript {
     repositories {
         google()
@@ -10,14 +11,18 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.1.0'
     }
 }
+
 rootProject.allprojects {
     repositories {
         google()
         jcenter()
     }
 }
+
 apply plugin: 'com.android.library'
+
 android {
+    namespace 'io.github.edufolly.flutterbluetoothserial' // Namespace hinzugefügt
     compileSdkVersion 30
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
